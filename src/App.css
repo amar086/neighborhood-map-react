@@ -11,12 +11,13 @@
 .sidebar {
     width: 25%;
     background-color: #252222;
-   top:0;
+    top:0;
  }
 
  .sidebar-body {
-  height: 95%;
+    height: 95%;
     overflow-y: scroll;
+    text-align: left;
 }
 
 
@@ -53,6 +54,20 @@ li.venue {
   height: 80px;
 }
 
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+
+  #search {
+    color: white;
+  }
+
+}
 
 /*
 .venue-name {

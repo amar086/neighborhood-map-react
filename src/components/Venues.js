@@ -23,7 +23,7 @@ class Venues extends Component {
      
 
     return (
-       <ol className='venues'>
+       <ol  className='venues' >
           {
             this.props.venues && this.props.venues.map((venue, index) => 
                 (<Venue key={index} {...venue} onVenueClicked={this.props.onVenueClicked}></Venue>)  

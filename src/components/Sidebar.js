@@ -43,11 +43,11 @@ class Sidebar extends Component {
   render() { 
 
     return (
-       <div className='sidebar'>
-          <div className="sidebar-header">
+       <div className='sidebar' role="complementary">
+          <div className="sidebar-header" role="heading" tabIndex="0">
            <h1>Restaurants</h1>
           </div>  
-          <input value={this.state.query} type={"search"} id={"search"}  placeholder={"Filter venues"} onChange={ (event) => this.onQueryChange(event.target.value)} />
+          <input role="search" value={this.state.query} type={"search"} id={"search"}  placeholder={"Filter venues"} onChange={ (event) => this.onQueryChange(event.target.value)} />
            <div className="sidebar-body"> 
               <Venues {...this.props} venues={this.onFilterVenues()} onVenueClicked={this.props.onVenueClicked} ></Venues>
            </div>

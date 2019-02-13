@@ -48,7 +48,7 @@ export default class Map extends Component {
           isMarkerShown
           googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD3wM3J0IL1Jz77Nda1xTgyLrquXUAgAks"
           loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `100%`, width: `75%` }} />}
+          containerElement={<div id="map" aria-label="location" role="application" style={{ height: `100%`, width: `75%` }} />}
           mapElement={<div style={{ height: `100%` }} />}/>
     )
   }
