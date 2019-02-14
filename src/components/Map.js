@@ -17,7 +17,7 @@ const MyMapComponent = withScriptjs(withGoogleMap((props) =>
         .map((marker, index, array) => {
           const venueDetail = props.venues.find(v => v.id === marker.id);   
           return (
-            <Marker 
+            <Marker
             key={index} 
             position={{ lat: marker.lat, lng: marker.lng }} 
             onClick={() => props.onMarkerClicked(marker)}
@@ -25,7 +25,7 @@ const MyMapComponent = withScriptjs(withGoogleMap((props) =>
             >
              {marker.isOpen && 
                 (
-                <InfoWindow>
+                <InfoWindow tabIndex="0">
                     <Fragment>
                       {venueDetail.bestPhoto && (<img src={`${venueDetail.bestPhoto.prefix}200x200${venueDetail.bestPhoto.suffix}`} alt={venueDetail.name}/>)}
                       <p>{venueDetail.name}</p>
@@ -48,8 +48,8 @@ export default class Map extends Component {
           isMarkerShown
           googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD3wM3J0IL1Jz77Nda1xTgyLrquXUAgAks"
           loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div id="map" aria-label="location" role="application" style={{ height: `100%`, width: `75%` }} />}
-          mapElement={<div style={{ height: `100%` }} />}/>
+          containerElement={<div style={{ height: `100%`, width: `75%` }} />}
+          mapElement={<div id="map" aria-label="location" role="application" style={{ height: `100%` }} />}/>
     )
   }
 }

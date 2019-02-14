@@ -13,7 +13,7 @@ class Helper {
 	static auth(){
 		const keys = {
 			client_id: "EQNOLG11AZT4GAN4WAVETSXZJQXZQXK32FUGUWTUZJAUNPEE", 
-			client_secret:"BHBT1ESH0YEZJCZGJMLA13AJRTGLSFTHNYE1SL40VLB0Z3LO", 
+			client_secret:"YDIDEXUX5KJBTNOZ50TKMJU5ETLLNRQR21ZFCGVXI4VMVQL1", 
 			v: "20130815"
 		}
 		return Helper.urlBuilder(keys);
