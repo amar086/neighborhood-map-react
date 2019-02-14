@@ -68,52 +68,7 @@ class App extends Component {
         });
   }  
 
-  // state = {
-  //   query: '',
-  //   venues:[],
-  //   filteredVenues:[]
-  // }
-
-
-  // filterPlaces = (q) => {  
   
-  //     let filteredVenues = this.venues.filter((venue) => {
-  //       return venue.name.toLowerCase().includes(q.toLowerCase());
-  //     });
-
-  //     this.setState({filteredVenues:filteredVenues, query: q});
-
-  //     this.markers.forEach((m) => {
-  //         m.setVisible(m.name.toLowerCase().includes(q.toLowerCase()));
-  //     });
-
-  // } 
-
-
-  // selectMarker = (marker) => {
-  //    this.infoWindow.setContent(marker.name);
-  //    this.map.setCenter(marker.position);
-  //    this.infoWindow.open(this.map, marker);
-  //    this.map.panBy(0, -125);
-  // }
-
-  //  bounceMarker = (marker) => {
-  //     if(marker.getAnimation() !== null){
-  //       marker.setAnimation(null);
-  //     }else {
-  //       marker.setAnimation(this.google.maps.Animation.BOUNCE);
-  //     }
-  //     setTimeout(() => { marker.setAnimation(null)}, 1000);
-  //  }
-
-
-  // venueClicked = (venue) => {
-  //    let markers = this.markers.filter((m) => {
-  //         return m.id === venue.id;
-  //    }); 
-  //    this.selectMarker(markers[0]);
-  //    this.bounceMarker(markers[0]);
-  // }
 
   render() { 
 
