@@ -21,9 +21,9 @@
 }
 
 
-.sidebar-header>h1{
+.sidebar-header>h1, h2{
   color:white;
-  text-align: left;
+  text-align: center;
 }
 
 input#search {

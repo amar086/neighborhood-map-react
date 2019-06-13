@@ -46,6 +46,7 @@ class Sidebar extends Component {
        <div className='sidebar' role="complementary">
           <div className="sidebar-header" role="heading" tabIndex="0">
            <h1>Restaurants</h1>
+           <h2>Marthe Amoussou</h2>
           </div>  
           <input role="search" value={this.state.query} type={"text"} id={"search"}  placeholder={"Filter venues"} onChange={ (event) => this.onQueryChange(event.target.value)} />
            <div className="sidebar-body"> 
